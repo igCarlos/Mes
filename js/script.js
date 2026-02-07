@@ -1,6 +1,10 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('selectstart', e => e.preventDefault());
+    
     const audioPlayer = new Audio();
     audioPlayer.src = 'https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/AUDIO/those%20eyes%20.mp3';
     audioPlayer.loop = true;
